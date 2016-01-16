@@ -1,0 +1,27 @@
+{
+  "name": "chartz",
+  "version": "0.0.1",
+  "description": "WP Post Metadata Proxy",
+  "main": "app.js",
+  "dependencies": {
+    "mysql": "^2.10.2",
+    "through": "^2.3.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maggiben/chartz.git"
+  },
+  "keywords": [
+    "wp"
+  ],
+  "author": "Benjamin Maggi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maggiben/chartz/issues"
+  },
+  "homepage": "https://github.com/maggiben/chartz#readme"
+}
