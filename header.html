@@ -1,0 +1,271 @@
+<html>
+
+<head>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' type='text/css' media='all' />
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,400,700,500' type='text/css'  media='all' />
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' type='text/css' media="all" />
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' type='text/css' media='all' />
+  <link rel='stylesheet' href='public/stylesheets/styles.css' type='text/css' media='all' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div id="print-header" class="print-header">
+      <img src="http://marketrealist.dev/wp-content/themes/marketrealist/images/logo-bw.png?w=500&amp;h=310&amp;fit=max&amp;auto=format">
+    </div>
+    <div class="container">
+      <nav class="nav-bar">
+        <div class="nav-brand">
+          <a class="logo" href="http://marketrealist.dev">
+            <img src="http://marketrealist.dev/wp-content/themes/marketrealist/images/mr_logo_white.svg" class="logo-lg" height="28">
+            <img src="public/images/logo.svg" class="logo-xs" width="32" height="32">
+          </a>
+        </div>
+        <div id="search" class="nav-search">
+          <form autocomplete="off" action="/search/">
+            <div class="nav-search-input">
+              <input id="search_term" class="not-logged" autocomplete="off" name="search_term" type="text" placeholder="Search Ticker or Keyword here">
+            </div>
+            <div class="nav-hints">
+              <button type="submit" class="search"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="nav-buttons ">
+          <ul class="menuitems">
+            <li class="dropdown jumbo">
+              <a href="#" class="dropdown-toggle icon-lg" data-toggle="collapse" data-target="#collapseExample">Research<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle icon-xs" data-toggle="collapse" data-target="#collapseExample"><i class="fa fa-home"></i></a>
+              <div class="dropdown-menu large">
+                <div class="colum padd">
+                  <h2 class="title">Research Coverage</h2>
+                  <div class="colum flex">
+                  </div>
+                </div>
+                <div class="colum padd">
+                  <h2 class="title">Research Type</h2>
+                  <div class="colum flex">
+                    <ul class="links ">
+
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle icon-lg">Tools<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle icon-xs"><i class="fa fa-cogs"></i></a>
+              <div class="dropdown-menu">
+                <div class="colum padd small-margin">
+                  <ul class="links">
+                    <li>
+                      <a href="http://marketrealist.dev/portfolio/">
+                        <i class="menuitem-icon icon-portfolio"></i> Portfolio Manager
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://marketrealist.dev/login/?redirect_to=http://marketrealist.dev/profile/subscriptions/">
+                        <i class="menuitem-icon icon-mail"></i> Email alerts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://marketrealist.dev/theme-investing/maximus-investing-theme/">
+                        <i class="menuitem-icon icon-trend"></i> Maximus Investing Theme Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://marketrealist.dev/theme-investing/interest-rates/">
+                        <i class="menuitem-icon icon-trend"></i> Interest Rates Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://marketrealist.dev/theme-investing/interest-rate-dashboard/">
+                        <i class="menuitem-icon icon-trend"></i> Interest Rate Dashboard
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="menuitem">
+              <a class="sign-up icon-lg" href="http://marketrealist.dev/sign-up/">Login</a>
+              <a href="#" class="dropdown-toggle icon-xs"><i class="fa fa-sign-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="collapseExample" class="submenu collapse">
+      <div class=" container">
+        <table class="table table-condensed"> <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <th scope="row">3</th> <td colspan="2">Larry the Bird</td> <td>@twitter</td> </tr> </tbody> </table>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrap container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+          <ul id="myTabs" class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><i class="fa fa-fw fa-file-o"></i>Create</a></li>
+            <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false"><i class="fa fa-fw fa-pencil"></i>Edit</a></li>
+            <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false"><i class="fa fa-fw fa-folder-o"></i>Library</a></li>
+            <li role="presentation" class="dropdown pull-right"> <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents" aria-expanded="false"><i class="fa fa-fw fa-cogs"></i>&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+                <li><a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">@fat</a></li>
+                <li><a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+              <h3 class="title">Choose a template</h3>
+              <hr />
+              <p>Pick from themplates below.</p>
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <button class="btn btn-primary-o"><img src="public/images/charts/bar.svg" width="128" height="128" /></button>
+                  <button class="btn btn-primary-o"><img src="public/images/charts/line.svg" width="128" height="128" /></button>
+                  <button class="btn btn-primary-o"><img src="public/images/charts/pie.svg" width="128" height="128" /></button>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+              <h3 class="title"><i class="fa fa-fw fa-pencil"></i>Title</h3>
+              <hr />
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" style="display:none">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="exampleInputEmail11">From:</label>
+                        <input type="date" class="form-control" id="exampleInputEmail11" placeholder="Search" value="2013-01-03">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="exampleInputEmail11">To:</label>
+                        <input type="date" class="form-control" id="exampleInputEmail1" placeholder="Search" value="2015-01-03">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <ul class="list-group symbol-list">
+                        <li class="symbol-list-item">
+                          <div class="btn-group">
+                            <label>
+                              <input type="checkbox" />
+                            </label>
+                          </div>
+                          <span class="name">Apple Inc. (APPL)</span>
+                          <div class="btn-group">
+                            <button><i class="fa fa-fw fa-eyedropper"></i></button>
+                            <button><i class="fa fa-fw fa-times-circle-o"></i></button>
+                          </div>
+                        </li>
+                        <li class="symbol-list-item">
+                          <div class="btn-group">
+                            <label>
+                              <input type="checkbox" />
+                            </label>
+                          </div>
+                          <span class="name">IBM Corp. (IBM)</span>
+                          <div class="btn-group">
+                            <button><i class="fa fa-fw fa-eyedropper"></i></button>
+                            <button><i class="fa fa-fw fa-times-circle-o"></i></button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary-o">Save</button>
+                </div>
+                <div class="col-sm-8">
+                  <div class="" id="live-chart" width="100%">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="dropdown1-tab">
+              <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledby="dropdown2-tab">
+              <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <div id="footer-tagline">
+        <span>Democratizing investment management</span>
+      </div>
+      <div id="footer-buttons">
+        <a id="link_footer_twitter" class="button-twitter" href="https://twitter.com/marketrealist">Follow us on Twitter</a>
+        <a id="link_footer_facebook" class="button-facebook" href="https://www.facebook.com/MarketRealist">Like us on Facebook</a>
+        <a id="link_footer_rss" class="button-rss" href="http://marketrealist.com/feed/">Grab our RSS Feed</a>
+      </div>
+      <nav id="footer-links">
+        <a id="link_footer_contact" href="http://marketrealist.com/contact/">Contact</a> •
+        <a id="link_footer_about" href="http://marketrealist.com/about/about-us/">About</a> •
+        <a id="link_footer_terms" href="http://marketrealist.com/terms/">Terms</a> •
+        <a id="link_footer_privacy" href="http://marketrealist.com/privacy/">Privacy</a> • © 2016 Market Realist, Inc.
+        <p>Quote data by <a href="https://www.xignite.com/" class="xignite">Xignite</a></p>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-2.2.0.min.js" crossorigin="anonymous"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <script src="public/vendors/highstock.js"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function () {
+    $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
+
+        var year = new Date(data[data.length - 1][0]).getFullYear(); // Get year of last data point
+
+        // Create the chart
+        $('#live-chart').highcharts('StockChart', {
+            chart: {
+              spacing: [2,0,0,0],
+            },
+            rangeSelector: {
+              enabled: false,
+              selected: 1
+            },
+            yAxis: {
+              title: {
+                text: 'Exchange rate'
+              }
+            },
+            series: [{
+              name: 'USD to EUR',
+              data: data,
+              id: 'dataseries',
+              tooltip: {
+                valueDecimals: 4
+              }
+            }]
+        });
+    });
+  });
+</script>
+</body>
+
+</html>

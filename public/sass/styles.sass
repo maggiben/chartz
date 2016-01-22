@@ -1,0 +1,179 @@
+$mr-green: #0d8234
+$menuitem-link-hover: rgba(12, 130, 52, 0.5)
+$mr-green-input-blur: rgba(13, 130, 52, 0.75)
+
+body 
+    font-family: 'Open Sans', sans-serif
+.page-wrap 
+    padding-top: 75px
+.header-wrapper
+    position: fixed
+    z-index: 99
+    top: auto
+    min-width: 100%
+    background-color: $mr-green
+    border-bottom: 1px solid $mr-green
+
+.print-header
+    display: none  
+// NEW: prefix mre
+.site-header
+    width: 100%
+    height: 50px
+    position: fixed
+    z-index: 1
+    background-color: $mr-green
+    .nav-bar
+        display: flex
+        justify-content: space-around
+        align-items: center
+        z-index: 1
+        height: 100%
+        .nav-brand
+            color: #fff
+
+            a.logo
+                .logo-xs
+                    filter: invert(1)
+                    display: none
+            @media only screen and (max-width: 768px)
+                .logo-xs
+                    display: inherit !important
+                .logo-lg
+                    display: none !important
+        .nav-buttons
+            ul.menuitems
+                padding: 0
+                margin: 0
+                > li
+                    list-style: none
+                    float: left
+                    .sign-up
+                        border: 1px solid #fff
+                        padding: 5px 10px
+                        border-radius: 4px
+                        transition: background-color 150ms ease
+                        &:hover
+                            background-color: rgba(126, 210, 33, 0.8)
+                            border-color: rgba(126, 210, 33, 0.8)
+                    > a
+                        color: #fff
+                        font-weight: normal
+                        text-transform: uppercase
+                        text-decoration: none
+                        padding: 16px 10px
+                        transition: background-color 150ms ease
+                        &:active
+                            background-color: #fff
+                            color: $mr-green
+                        .icon
+                            display: inline
+                            vertical-align: middle
+                            margin-right: 8px
+                            &.user-logged-in
+                                margin-right: 2px
+                                background-color: rgba(126, 210, 33, 0.8)
+                                border-radius: 100%
+                    > a.icon-xs
+                        display: none
+                @media only screen and (max-width: 768px)
+                    .icon-xs
+                        display: inherit !important
+                    .icon-lg
+                        display: none !important
+
+        .nav-search
+            flex-grow: 1
+            padding: 0px 15px
+            form
+                display: flex
+                margin: 0
+                align-items: center
+            button.search
+                border: 0
+                color: #fff
+                background: transparent
+                cursor: pointer
+                &.is-loading
+                    background: $mr-green url('images/ajax-loading-tiny.gif') 50% 70% no-repeat
+            .nav-hints
+                margin-left: -22px
+            .nav-search-input
+                width: 100%
+                border-bottom: 1px solid transparentize(#fff, 0.75)
+                input
+                    outline: 0
+                    color: #fff
+                    line-height: 2.25em
+                    border: none
+                    width: 100%
+                    background-color: transparent
+                    font-size: 14px
+                    &::-webkit-input-placeholder
+                        color: transparentize(#fff, 0.80)
+                    &:-moz-placeholder
+                        color: transparentize(#fff, 0.80)
+                    &::-moz-placeholder
+                        color: transparentize(#fff, 0.80)
+                    &:-ms-input-placeholder
+                        color: transparentize(#fff, 0.80)
+
+
+.nav-tabs
+    border-bottom: 1px solid $mr-green
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+    border: 1px solid $mr-green
+    border-bottom-color: transparent
+.nav-tabs>li>a
+    border-radius: 2px 2px 0 0
+.nav>li>a
+    color: $mr-green
+
+/* inactive hover */
+.nav-tabs>li>a:hover
+    border-bottom-color: $mr-green
+    border-left-color: transparentize($mr-green, 0.75)
+    border-right-color: transparentize($mr-green, 0.75)
+    border-top-color: transparentize($mr-green, 0.75)
+.nav>li>a:focus, .nav>li>a:hover
+    background-color: transparentize($mr-green, 0.65)
+    color: #FFF
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+    background-color: transparentize($mr-green, 0.65)
+    border-color: $mr-green
+
+.btn-primary-o
+    border: 1px solid $mr-green
+    background-color: #fff
+    transition: all 150ms ease
+    border-radius: 2px
+    &:hover
+        background-color: $mr-green
+        border-color: transparent
+        color: #fff
+        img
+            -webkit-filter: invert(1)
+
+
+.list-group.symbol-list
+    .symbol-list-item
+        display: flex
+        justify-content: space-between
+        align-content: center
+        border-radius: 0px
+        position: relative
+        padding: 5px 0px
+        border-bottom: 1px solid #eee
+        span.name
+            flex-grow: 1
+            margin-left: 10px
+        button 
+            background-color: transparent
+            border: none
+            padding: 0px
+
+.submenu
+    width: 100%
+    background: #fff
+    border-bottom: 1px solid $mr-green
