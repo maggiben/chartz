@@ -1,11 +1,17 @@
-$mr-green: #0d8234
+$mr-green: #0D8234
 $menuitem-link-hover: rgba(12, 130, 52, 0.5)
 $mr-green-input-blur: rgba(13, 130, 52, 0.75)
 
-body 
+$menuitem-link-hover: #86C099
+$body_colour: #0D8234
+
+body
+    display: flex
+    flex-direction: column
     font-family: 'Open Sans', sans-serif
 .page-wrap 
     padding-top: 75px
+    min-height: 100%
 .header-wrapper
     position: fixed
     z-index: 99
@@ -45,6 +51,7 @@ body
             ul.menuitems
                 padding: 0
                 margin: 0
+                display: flex
                 > li
                     list-style: none
                     float: left
@@ -99,7 +106,9 @@ body
             .nav-hints
                 margin-left: -22px
             .nav-search-input
-                width: 100%
+                display: flex
+                flex-grow: 1
+                flex-direction: column
                 border-bottom: 1px solid transparentize(#fff, 0.75)
                 input
                     outline: 0
@@ -172,8 +181,190 @@ body
             background-color: transparent
             border: none
             padding: 0px
+        button.color-picker
+            border: none
+            background: transparent
+            padding: 0px
+            margin: 0px
+            color: #fff
+            i 
+                width: 1.5em
+                height: 1.5em
+                line-height: 1.5em
 
 .submenu
     width: 100%
     background: #fff
     border-bottom: 1px solid $mr-green
+
+footer
+    background-color: #eee
+    border-top: 1px solid #ddd
+    clear: both
+    margin-top: 3em
+    padding: .5em 0 3em 0
+    font-size: 1em
+    #footer-tagline 
+        text-align: center
+        float: none
+        font-size: 21px
+        margin-bottom: 20px
+        font-weight: bold
+        span
+            background: url(images/magnify_glass_green.png) no-repeat 0 0
+            display: inline-block
+            height: 35px
+            padding-left: 40px
+            padding-top: 4px
+            margin-bottom: -0.6em
+    #footer-buttons
+        text-align: center
+        margin-bottom: 15px
+    #footer-links
+        text-align: center
+        p
+            font-size: 10px
+            line-height: 16px
+            margin: 0
+            .xignite
+                border: 0
+                display: inline-block
+                background: url(images/xignite.png) no-repeat 0 0
+                width: 40px
+                height: 10px
+                vertical-align: middle
+
+#footer-tagline
+    float: right
+    padding: 5px
+    font-size: 1em
+    margin-top: 23px
+
+.live-search-results
+    flex: 1
+    a.default-search 
+        font-weight: normal
+        margin-top: 20px
+    h2
+        color: #39904C
+        border-top: 1px solid #fff
+        line-height: 24px
+        font-size: 10px
+        padding: 3px 10px 0
+        margin: 0
+        font-weight: bold
+        text-transform: uppercase
+        font-size: 12px
+    li
+        position: relative
+        width: 100%
+        list-style: none
+    > ul
+        background-color: #fff
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.5)
+        width: 100%
+        padding: 0px
+        li:first-child
+            ul
+                border-top: 0
+            h2
+                font-weight: normal
+                border-top: 0
+                top: 0
+        ul
+            margin: 0px
+            float: none
+            li
+                border: 0
+        .last
+            ul
+                border-bottom: 0
+    em
+        font-weight: bold
+    a
+        color: $body_colour
+        display: block
+        cursor: pointer
+        padding: 2px 10px
+        overflow: hidden
+        font-size: 16px
+        font-weight: 300
+        &:hover, &:active, &.hovered
+            border-radius: 8px
+            background: $menuitem-link-hover
+            color: #fff
+            border: 0
+            text-decoration: none
+            span, span.ticker
+                color: #fff
+        h3
+            font-size: 13px
+            line-height: 24px
+            margin-right: 50px
+            padding: 0 10px 0 0
+            height: 24px
+            overflow: hidden
+            text-align: left
+            font-size: 16px
+            font-weight: 300
+            display: inline
+        span
+            color: #999999
+            float: left
+            height: 24px
+            margin-right: 20px
+            max-width: 200px
+            min-width: 200px
+            overflow: hidden
+            text-overflow: ellipsis
+            white-space: nowrap
+            &.ticker
+                color: $body_colour
+    .has-ticker.has-analysis
+        h3
+            width: 220px
+
+.no-search-results
+    p
+        padding: 2px 10px
+        margin: 0
+        margin-top: 20px
+
+.themed-checkbox
+    margin-right: 1em
+
+    &:hover
+        input[type="checkbox"]:not(:checked) + label::before
+            background: #F1F1F1 !important
+            color: #444
+
+    label
+        font-weight: normal
+        color: #0d8234
+        display: block
+        position: relative
+        user-select: none
+        cursor: pointer
+
+    label::before
+        content: "\f06e"
+        background: #7B7B7B
+        position: absolute
+        width: 21px
+        height: 21px
+        border-radius: 2px
+        color: #fff
+        border: 1px solid #7B7B7B
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: background-color 150ms ease
+
+    input[type="checkbox"]:not(:checked) + label::before
+        background: #fff
+        content: "\f070"
+        color: #7B7B7B
+
+    input[type="checkbox"]
+        display: none

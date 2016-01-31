@@ -27,6 +27,54 @@
           <form autocomplete="off" action="/search/">
             <div class="nav-search-input">
               <input id="search_term" class="not-logged" autocomplete="off" name="search_term" type="text" placeholder="Search Ticker or Keyword here">
+              <div class="live-search-results" style="display:none">
+                <ul>
+                  <li>
+                    <h2>Quotes</h2>
+                    <ul id="quote-results">
+                      <li>
+                        <a href="http://marketrealist.com/quote-page/ibm/" class="has-ticker no-analysis">
+                          <span class="ticker"><strong>IBM</strong></span>
+                          <h3>International Business Machines Corp.</h3>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://marketrealist.com/quote-page/ibmj/" class="has-ticker no-analysis">
+                          <span class="ticker"><strong>IBM</strong>J</span>
+                          <h3>iShares iBonds Dec 2021 AMT-Free Mn Bd</h3>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://marketrealist.com/quote-page/ibme/" class="has-ticker no-analysis">
+                          <span class="ticker"><strong>IBM</strong>E</span>
+                          <h3>iShares iBonds Sep 2016 AMT-Free Muni Bd</h3>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://marketrealist.com/quote-page/ibmi/" class="has-ticker no-analysis">
+                          <span class="ticker"><strong>IBM</strong>I</span>
+                          <h3>iShares iBonds Sep 2020 AMT-Free Muni Bd</h3>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://marketrealist.com/quote-page/ibmk/" class="has-ticker no-analysis">
+                          <span class="ticker"><strong>IBM</strong>K</span>
+                          <h3>iShares iBonds Dec 2022 AMT-Free Mn Bd</h3>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://marketrealist.com/quote-page/ibmh/" class="has-ticker no-analysis">
+                          <span class="ticker"><strong>IBM</strong>H</span>
+                          <h3>iShares iBonds Sep 2019 AMT-Free Muni Bd</h3>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/search/?search_term=ibm&amp;disable_quote_redirect=1`" class="default-search">See all search results</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="nav-hints">
               <button type="submit" class="search"><i class="fa fa-search"></i></button>
@@ -99,8 +147,55 @@
       </nav>
     </div>
     <div id="collapseExample" class="submenu collapse">
-      <div class=" container">
-        <table class="table table-condensed"> <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <th scope="row">3</th> <td colspan="2">Larry the Bird</td> <td>@twitter</td> </tr> </tbody> </table>
+      <div class="container">
+        <div class="live-search-results" data-redirect-to="http://marketrealist.com/quote-page/ibm/">
+          <ul>
+            <li>
+              <h2>Quotes</h2>
+              <ul id="quote-results">
+                <li>
+                  <a href="http://marketrealist.com/quote-page/ibm/" class="has-ticker no-analysis">
+                    <span class="ticker"><strong>IBM</strong></span>
+                    <h3>International Business Machines Corp.</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://marketrealist.com/quote-page/ibmj/" class="has-ticker no-analysis">
+                    <span class="ticker"><strong>IBM</strong>J</span>
+                    <h3>iShares iBonds Dec 2021 AMT-Free Mn Bd</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://marketrealist.com/quote-page/ibme/" class="has-ticker no-analysis">
+                    <span class="ticker"><strong>IBM</strong>E</span>
+                    <h3>iShares iBonds Sep 2016 AMT-Free Muni Bd</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://marketrealist.com/quote-page/ibmi/" class="has-ticker no-analysis">
+                    <span class="ticker"><strong>IBM</strong>I</span>
+                    <h3>iShares iBonds Sep 2020 AMT-Free Muni Bd</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://marketrealist.com/quote-page/ibmk/" class="has-ticker no-analysis">
+                    <span class="ticker"><strong>IBM</strong>K</span>
+                    <h3>iShares iBonds Dec 2022 AMT-Free Mn Bd</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://marketrealist.com/quote-page/ibmh/" class="has-ticker no-analysis">
+                    <span class="ticker"><strong>IBM</strong>H</span>
+                    <h3>iShares iBonds Sep 2019 AMT-Free Muni Bd</h3>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/search/?search_term=ibm&amp;disable_quote_redirect=1`" class="default-search">See all search results</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -110,7 +205,10 @@
       <div class="col-md-12">
         <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
           <ul id="myTabs" class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><i class="fa fa-fw fa-file-o"></i>Create</a></li>
+            <li role="presentation" class="active">
+              <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+                <i class="fa fa-fw fa-file-o"></i>Create</a>
+            </li>
             <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false"><i class="fa fa-fw fa-pencil"></i>Edit</a></li>
             <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false"><i class="fa fa-fw fa-folder-o"></i>Library</a></li>
             <li role="presentation" class="dropdown pull-right"> <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents" aria-expanded="false"><i class="fa fa-fw fa-cogs"></i>&nbsp;<span class="caret"></span></a>
@@ -133,6 +231,7 @@
                 </div>
               </div>
             </div>
+
             <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
               <h3 class="title"><i class="fa fa-fw fa-pencil"></i>Title</h3>
               <hr />
@@ -163,10 +262,9 @@
                     <div class="col-sm-12">
                       <ul class="list-group symbol-list">
                         <li class="symbol-list-item">
-                          <div class="btn-group">
-                            <label>
-                              <input type="checkbox" />
-                            </label>
+                          <div class="themed-checkbox fa">
+                            <input type="checkbox" id="c1" />
+                            <label for="c1"></label>
                           </div>
                           <span class="name">Apple Inc. (APPL)</span>
                           <div class="btn-group">
@@ -191,12 +289,13 @@
                   </div>
                   <button class="btn btn-primary-o">Save</button>
                 </div>
-                <div class="col-sm-8">
-                  <div class="" id="live-chart" width="100%">
+                <div class="col-sm-8" style="min-height:400px">
+                  <div class="" id="live-chart" width="100%" height="100%">
                   </div>
                 </div>
               </div>
             </div>
+
             <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="dropdown1-tab">
               <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
             </div>
@@ -220,10 +319,10 @@
         <a id="link_footer_rss" class="button-rss" href="http://marketrealist.com/feed/">Grab our RSS Feed</a>
       </div>
       <nav id="footer-links">
-        <a id="link_footer_contact" href="http://marketrealist.com/contact/">Contact</a> •
-        <a id="link_footer_about" href="http://marketrealist.com/about/about-us/">About</a> •
-        <a id="link_footer_terms" href="http://marketrealist.com/terms/">Terms</a> •
-        <a id="link_footer_privacy" href="http://marketrealist.com/privacy/">Privacy</a> • © 2016 Market Realist, Inc.
+        <a id="link_footer_contact" href="http://marketrealist.com/contact/">Contact</a> &bull;
+        <a id="link_footer_about" href="http://marketrealist.com/about/about-us/">About</a> &bull;
+        <a id="link_footer_terms" href="http://marketrealist.com/terms/">Terms</a> &bull;
+        <a id="link_footer_privacy" href="http://marketrealist.com/privacy/">Privacy</a> &bull; &copy; 2016 Market Realist, Inc.
         <p>Quote data by <a href="https://www.xignite.com/" class="xignite">Xignite</a></p>
       </nav>
     </div>
@@ -235,37 +334,37 @@
   <script src="public/vendors/highstock.js"></script>
 
   <script type="text/javascript">
-  $(document).ready(function () {
-    $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
+    $(document).ready(function () {
+      $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
 
-        var year = new Date(data[data.length - 1][0]).getFullYear(); // Get year of last data point
+          var year = new Date(data[data.length - 1][0]).getFullYear(); // Get year of last data point
 
-        // Create the chart
-        $('#live-chart').highcharts('StockChart', {
-            chart: {
-              spacing: [2,0,0,0],
-            },
-            rangeSelector: {
-              enabled: false,
-              selected: 1
-            },
-            yAxis: {
-              title: {
-                text: 'Exchange rate'
-              }
-            },
-            series: [{
-              name: 'USD to EUR',
-              data: data,
-              id: 'dataseries',
-              tooltip: {
-                valueDecimals: 4
-              }
-            }]
-        });
+          // Create the chart
+          $('#live-chart').highcharts('StockChart', {
+              chart: {
+                spacing: [2,0,0,0],
+              },
+              rangeSelector: {
+                enabled: false,
+                selected: 1
+              },
+              yAxis: {
+                title: {
+                  text: 'Exchange rate'
+                }
+              },
+              series: [{
+                name: 'USD to EUR',
+                data: data,
+                id: 'dataseries',
+                tooltip: {
+                  valueDecimals: 4
+                }
+              }]
+          });
+      });
     });
-  });
-</script>
+  </script>
 </body>
 
 </html>

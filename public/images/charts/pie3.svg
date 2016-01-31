@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   viewBox="0 0 512.00001 512.00001"
+   id="svg4365"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="pie3.svg">
+  <defs
+     id="defs4367" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="309.41772"
+     inkscape:cy="254.54413"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:showpageshadow="true"
+     showborder="true"
+     objecttolerance="20"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-global="true"
+     inkscape:snap-object-midpoints="false"
+     guidetolerance="10000"
+     inkscape:object-nodes="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4373"
+       spacingx="1"
+       empspacing="16" />
+    <sodipodi:guide
+       position="-3.0000001,256"
+       orientation="0,1"
+       id="guide4973" />
+    <sodipodi:guide
+       position="0,254"
+       orientation="1,0"
+       id="guide4975" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="0,1"
+       id="guide4977" />
+    <sodipodi:guide
+       position="0,512.00001"
+       orientation="0,1"
+       id="guide4979" />
+    <sodipodi:guide
+       position="512,512.00001"
+       orientation="1,0"
+       id="guide5921" />
+    <sodipodi:guide
+       position="256,512.00001"
+       orientation="1,0"
+       id="guide5923" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4370">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-540.36216)">
+    <path
+       style="fill:#ffcc00;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 0,716.36216 112,-16 144,32 143.99999,-16 112,16 0,320.00004 -511.99999,0 z"
+       id="path6554"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ff6600;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 0,748.36216 112,32 144,-16 143.99999,16 112,-16 0,288.00004 -511.99999,0 z"
+       id="path6552"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#aa8800;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 0,812.36216 112,-16 144,64 143.99999,-80 112,48 0,224.00004 -511.99999,0 z"
+       id="path6550"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#800000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 0,908.36216 112,-64 144,112 143.99999,-144 112,128 0,112.00004 -511.99999,0 z"
+       id="path6546"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ff00ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 0,1052.3622 112,-128.00004 144,64 143.99999,-96 112,80 0,80.00004 z"
+       id="path6544"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

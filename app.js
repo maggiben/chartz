@@ -191,6 +191,22 @@ function xigniteX () {
   process.exit()
 });*/
 
+fred.category.children({ 
+    'file_type': 'json',
+    'category_id': '10',
+}, function(err, result) {
+   // console.log(err, result);
+});
+
+fred.category.series({ 
+    'file_type': 'json',
+    'category_id': '100',
+}, function(err, result) {
+  console.log(err, result);
+  process.exit()
+});
+
+/*
 xignite.get('batsrealtime', 'ListTradedSymbols', {
     'NumberOfDays': 10,
     'StartSymbol' : 'A',
@@ -198,6 +214,7 @@ xignite.get('batsrealtime', 'ListTradedSymbols', {
 }, function (error, result) {
     console.log("xignite: ", result)
 });
+*/
 
 getQuotes = function (symbols, callback) {
     xignite.get('batsrealtime', 'GetRealQuotes', {
